@@ -1,10 +1,16 @@
 #include<string.h>
 #include<iostream>
+#include<vector>
+#include "job.h"
 class Shell{
 
-int parse(std::string command);
+public:
 
-int spawn(std::string command, std::string args[]);
+    int parse(std::string command);
+
+    Job spawn(std::string command, std::string args[]);
+
+
 
 
 
